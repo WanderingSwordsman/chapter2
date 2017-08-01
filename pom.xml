@@ -18,6 +18,7 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>
+            <!--此依赖只参与编译-->
             <scope>provided</scope>
         </dependency>
         <!-- JSP -->
@@ -32,6 +33,7 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
+            <!--此依赖只是运行时需要-->
             <scope>runtime</scope>
         </dependency>
         <dependency>
@@ -63,7 +65,7 @@
         <!-- Apache Commons Collections -->
         <dependency>
             <groupId>org.apache.commons</groupId>
-            <artifactId>commons-collections</artifactId>
+            <artifactId>commons-collections4</artifactId>
             <version>4.1</version>
         </dependency>
         <!-- Apache Commons DbUtils -->
@@ -98,6 +100,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.18.1</version>
                 <configuration>
+                    <!--打包时跳过单元测试-->
                     <skipTests>true</skipTests>
                 </configuration>
             </plugin>
