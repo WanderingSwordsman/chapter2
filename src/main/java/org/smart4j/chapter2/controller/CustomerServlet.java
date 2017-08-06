@@ -16,7 +16,7 @@ import java.util.List;
  * Created by ShangJun on 2016/7/3.
  * 进入客户列表  界面
  */
-@WebServlet("/customer_show")
+@WebServlet("/customer")
 public class CustomerServlet extends HttpServlet {
     private CustomerService customerService;
     @Override
